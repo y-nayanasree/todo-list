@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 25px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #30245f;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+#taskForm {
+    display: flex;
+    gap: 10px;
+}
+
+#taskInput {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    font-size: 15px;
+}
+
+#taskInput:focus {
+    outline: 2px solid #8b7cf6;
+    border-color: transparent;
+}
+
+button {
+    padding: 12px 17px;
+    border: none;
+    border-radius: 9px;
+    background: #6c5ce7;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+.message {
+    min-height: 20px;
+    margin-top: 10px;
+    color: #b42318;
+    font-size: 13px;
+}
+
+.list-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 18px 0;
+    color: #30245f;
+}
+
+#taskCount {
+    color: #6c5ce7;
+    font-size: 14px;
+}
+
+#taskList {
+    list-style: none;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 13px;
+    margin-bottom: 10px;
+    background: #f5f3ff;
+    border-radius: 10px;
+    overflow-wrap: anywhere;
+}
+
+.task-text {
+    flex: 1;
+    color: #333;
+    line-height: 1.5;
+}
+
+.delete-btn {
+    flex-shrink: 0;
+    background: #e74c3c;
+    padding: 9px 12px;
+}
+
+.empty {
+    padding: 20px 5px;
+    text-align: center;
+    color: #888;
+}
+
+footer {
+    margin-top: 25px;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+}
+
+@media (max-width: 420px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    #taskForm {
+        flex-direction: column;
+    }
+
+    #taskForm button {
+        width: 100%;
+    }
+}
